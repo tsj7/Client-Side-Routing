@@ -5,11 +5,11 @@ const CORS = require('cors');
 const app = express();
 
 app.use(bodyParser.json());
-app.use(CORS());
+app.use(CORS()); 
 
 const movies = [
 	{
-		id: 0, 
+		id: 0,
 		title: 'The Godfather',
 		director: 'Francis Ford Coppola',
 		metascore: 100,
